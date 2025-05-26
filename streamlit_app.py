@@ -15,6 +15,12 @@ with st.expander('Data'):
   y = df.target_names
   y
 
+iris = load_iris()
+df = pd.DataFrame(iris.data, columns=iris.feature_names)
+df['target'] = iris.target
+df['target_name'] = [iris.target_names[i] for i in iris.target]
+
+# Plot with plotly inside Streamlit
 with st.expander("Data visualization"):
     fig = px.scatter(df,
                      x='sepal length (cm)',
@@ -22,4 +28,3 @@ with st.expander("Data visualization"):
                      color='target_name',
                      title='Sepal Dimensions by Species')
     st.plotly_chart(fig)
-
