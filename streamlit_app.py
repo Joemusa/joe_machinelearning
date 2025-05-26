@@ -12,6 +12,7 @@ with st.expander('Data'):
   df
   st.write('**X**')
   y = df.target_names
+  y
 
 with st.expander('Data visualization'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal length (cm)')
