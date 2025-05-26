@@ -10,6 +10,7 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
+  df
   
 # Extract features (X) and target (y)
 X = df.drop(columns='target')  # Features (all columns except 'target')
