@@ -11,6 +11,7 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
   st.write('**X**')
+  y = df.target_names
 
 with st.expander('Data visualization'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal length (cm)')
