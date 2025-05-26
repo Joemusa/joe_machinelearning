@@ -15,5 +15,5 @@ with st.expander('Data'):
   y
 
 with st.expander('Data visualization'):
-  st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)')
+  st.scatter_chart(df)
 
