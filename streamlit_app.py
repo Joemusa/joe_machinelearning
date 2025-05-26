@@ -16,6 +16,10 @@ with st.sidebar:
   sepal = st.selectbox('Sepal',('sepal length','sepal width'))
   petal = st.selectbox('Petal',('petal length','petal width'))
 
+with st.expander('Data Visualization'):
+  st.scatter_chart(df)
+
+
 
 
 
