@@ -13,7 +13,9 @@ with st.expander('Data'):
   
 # Extract features (X) and target (y)
 X = df.drop(columns='target')  # Features (all columns except 'target')
+X
 y = df['target']               # Target (labels)
+y
 
 
 
