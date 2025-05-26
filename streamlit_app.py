@@ -13,6 +13,9 @@ with st.expander('Data'):
   df
 
 with.write('**y**')
+X = df['target']
+
+with.write('**y**')
 y = df
 y
 
