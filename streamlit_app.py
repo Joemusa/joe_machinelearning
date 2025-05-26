@@ -16,7 +16,8 @@ with st.expander('Data Visualization'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
 
 with st.sidebar:
-  length = st.slider('Sepal length', 5.1, 7.9, 1.1)
+  Sepal_length_cm = st.slider('Sepal length (cm)', 5.1, 7.9, 1.1)
+  Sepal_width_cm = st.slider('Sepal width (cm)', 2.0, 4.4, 1.1)
   
 
 
