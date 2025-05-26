@@ -11,13 +11,11 @@ with st.expander('Data'):
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
   df
-
-
   
 with st.expander('Data Visualization'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
 
-with st.siderbar:
+with st.sidebar:
   st.header('Input features')
   
 
