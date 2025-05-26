@@ -12,7 +12,8 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
 with st.sidebar:
-  st.header('input features')
+  st.header('Input Features')
+  sepal = st.selectbox('Sepal',('sepal lenth','sepal width'))
 
 
 
