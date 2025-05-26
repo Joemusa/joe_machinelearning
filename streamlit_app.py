@@ -13,7 +13,7 @@ with st.expander('Data'):
   df
 
 with.write('**y**')
-y = df.feature_names
+y = df[['sepal length (cm)', 'sepal width (cm)','petal length (cm),'petal width (cm)']]
 y
 
 st.title('Scatter Charts')
