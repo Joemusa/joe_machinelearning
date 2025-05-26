@@ -13,7 +13,7 @@ with st.expander('Data'):
   df['target']
 
 
-st.subtitle('Scatter Charts')
+st.title('Scatter Charts')
 with st.expander('Petal length (cm) vs Petal width (cm)'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
 
