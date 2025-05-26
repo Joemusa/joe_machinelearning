@@ -15,8 +15,7 @@ with st.expander('Data'):
   y = df.target_names
   y
 
-with st.sidebar:
-  st.header('Input features')
+
 
 
 
