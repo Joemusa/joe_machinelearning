@@ -14,12 +14,9 @@ with st.expander('Data'):
 
 with st.expander('target'):
   with.write('**y**')
-  X = df['target']
+  X = df
   X
 
-with.write('**y**')
-y = df
-y
 
 st.title('Scatter Charts')
 with st.expander('Data Visualization'):
