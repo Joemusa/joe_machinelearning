@@ -11,7 +11,7 @@ with st.expander('Data'):
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
   df
-with st.sidebar:
+with st.slider:
   sepal_length_cm = st.slider('Sepal length (cm)',5.1, 7.9, 1)
 
 with st.expander('Data Visualization'):
