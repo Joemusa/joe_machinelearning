@@ -15,26 +15,7 @@ with st.expander('Data'):
   y = df.target_names
   y
 
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-from sklearn.datasets import load_iris
-
-# Load dataset
-iris = load_iris()
-df = pd.DataFrame(iris.data, columns=iris.feature_names)
-df['target'] = iris.target
-df['target_name'] = [iris.target_names[i] for i in iris.target]
-
-# Title
-st.title("Iris Dataset Visualization")
-
-# Plot inside expander
-with st.expander("Data visualization"):
-    fig = px.scatter(df,
-                     x='sepal length (cm)',
-                     y='sepal width (cm)',
-                     color='target_name',
-                     title='Sepal Dimensions by Species')
-    st.plotly_chart(fig)
-
+with st.sidebar:
+  st.header('Input features')
+  sepal = st.selectbox('sepal length', 'sepal width')
+  petal = st.selectbox('petal length', 'petal width')
