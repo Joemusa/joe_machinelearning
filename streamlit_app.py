@@ -10,8 +10,8 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
-  df['target']
   df
+  df['target']
 
 
 st.title('Scatter Charts')
