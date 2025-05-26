@@ -1,4 +1,4 @@
-import plotly.express as px
+aimport plotly.express as px
 import streamlit as st
 import pandas as pd
 from sklearn.datasets import load_iris
@@ -17,5 +17,5 @@ with st.expander('Data'):
 
 with st.sidebar:
   st.header('Input features')
-  sepal = st.selectbox('sepal length', 'sepal width')
-  petal = st.selectbox('petal length', 'petal width')
+  sepal = st.selectbox('sepal',('sepal length', 'sepal width'))
+  petal = st.selectbox('petal',('petal length', 'petal width'))
