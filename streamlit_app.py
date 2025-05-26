@@ -11,9 +11,7 @@ with st.expander('Data'):
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
   df
-  st.write('**X**')
-  y = df.target_names
-  y
+
 
 
 
