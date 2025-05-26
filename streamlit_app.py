@@ -10,4 +10,8 @@ with st.expander('Data'):
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
   df
+  st.write('**X**')
+
+with st.expander('Data visualization'):
+  st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal length (cm)')
 
