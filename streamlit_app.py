@@ -18,6 +18,8 @@ with st.expander('Data Visualization'):
 with st.sidebar:
   Sepal_length_cm = st.slider('Sepal length (cm)', 5.1, 7.9, 1.1)
   Sepal_width_cm = st.slider('Sepal width (cm)', 2.0, 4.4, 1.1)
+  Petal_length_cm = st.slider('Sepal length (cm)', 1.0, 6.9, 1.1)
+  Petal_width_cm = st.slider('Sepal width (cm)', 0.1, 2.4, 0.1)
   
 
 
