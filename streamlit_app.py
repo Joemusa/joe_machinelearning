@@ -12,6 +12,10 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
 
+with.write('**y**')
+y = df.feature_names
+y
+
 st.title('Scatter Charts')
 with st.expander('Data Visualization'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
@@ -21,8 +25,9 @@ with st.sidebar:
   Sepal_width_cm = st.slider('Sepal width (cm)', 2.0, 4.4, 1.1)
   Petal_length_cm = st.slider('Sepal length (cm)', 1.0, 6.9, 1.1)
   Petal_width_cm = st.slider('Sepal width (cm)', 0.1, 2.4, 0.1)
-  
 
+
+                       
 
 
 
