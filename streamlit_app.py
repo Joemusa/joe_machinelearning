@@ -12,12 +12,12 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
 with st.sidebar:
-  st.header('Input Features')
-  sepal = st.selectbox('Sepal',('sepal length','sepal width'))
-  petal = st.selectbox('Petal',('petal length','petal width'))
+  sepal length (cm) = st.slider('Sepal length (cm)',5.1, 7.9, 1)
 
 with st.expander('Data Visualization'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
+  
+  
 
 
 
