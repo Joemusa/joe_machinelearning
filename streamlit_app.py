@@ -17,7 +17,6 @@ with st.expander('Data'):
 
 with st.sidebar:
   st.header('Input features')
-  sepal = st.selectbox('sepal',('sepal length', 'sepal width'))
-  petal = st.selectbox('petal',('petal length', 'petal width'))
+
 
 
