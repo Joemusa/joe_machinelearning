@@ -12,7 +12,8 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
 
-
+with st.siderbar:
+  
 with st.expander('Data Visualization'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
   
