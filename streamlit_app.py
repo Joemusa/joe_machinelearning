@@ -17,7 +17,7 @@ with st.sidebar:
   petal = st.selectbox('Petal',('petal length','petal width'))
 
 with st.expander('Data Visualization'):
-  st.scatter_chart(df)
+  st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
 
 
 
