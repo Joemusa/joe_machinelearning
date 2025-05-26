@@ -28,3 +28,5 @@ with st.expander("Data visualization"):
                      color='target_name',
                      title='Sepal Dimensions by Species')
     st.plotly_chart(fig)
+with st.expander("Data visualization"):
+    st.scatter_chart(df[['sepal length (cm)', 'sepal width (cm)']])
