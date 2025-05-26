@@ -14,6 +14,11 @@ with st.expander('Data'):
   y = df.target_names
   y
 
-with st.expander('Data visualization'):
-  st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)', color = 'target')
+with st.expander("Data visualization"):
+    fig = px.scatter(df,
+                     x='sepal length (cm)',
+                     y='sepal width (cm)',
+                     color='target_name',
+                     title='Sepal Dimensions by Species')
+    st.plotly_chart(fig)
 
