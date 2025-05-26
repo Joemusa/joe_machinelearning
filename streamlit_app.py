@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.datasets import load_iris
 iris_dataset = load_iris()
-st.title('🎈 Machine Learning Ap')
+st.title('🎈 Machine Learning App')
 
 st.write('This is app builds a machine learning model!')
 with st.expander('Data'):
@@ -11,7 +11,8 @@ with st.expander('Data'):
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
   df['target'] = iris_dataset.target
   df
-
+with st.sidebar:
+  st.header('input features')
 
 
 
