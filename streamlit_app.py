@@ -12,8 +12,10 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
 
-with.write('**y**')
-X = df['target']
+with st.expander('target'):
+  with.write('**y**')
+  X = df['target']
+  X
 
 with.write('**y**')
 y = df
