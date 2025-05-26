@@ -12,11 +12,6 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
 
-with st.expander('target'):
-  with.write('**y**')
-  X = df
-  X
-
 
 st.title('Scatter Charts')
 with st.expander('Data Visualization'):
