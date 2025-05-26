@@ -17,7 +17,6 @@ st.title('Scatter Charts')
 with st.expander('Petal length (cm) vs Petal width (cm)'):
   st.scatter_chart(data = df, x = 'petal length (cm)', y = 'petal width (cm)', color = 'target' )
 
-st.title('Scatter Charts')
 with st.expander('Sepal length (cm) vs Sepal width (cm)'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)', color = 'target' )
 
