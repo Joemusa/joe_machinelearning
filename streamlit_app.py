@@ -12,7 +12,7 @@ with st.expander('Data'):
   df['target'] = iris_dataset.target
   df
   df['target']
-  df['column']
+  df['feature_names']
 
 
 st.title('Scatter Charts')
