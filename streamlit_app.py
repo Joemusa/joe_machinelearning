@@ -13,7 +13,8 @@ with st.expander('Data'):
   df
 with st.sidebar:
   st.header('Input Features')
-  sepal = st.selectbox('Sepal',('sepal lenth','sepal width'))
+  sepal = st.selectbox('Sepal',('sepal length','sepal width'))
+  petal = st.selectbox('Petal',('petal length','petal width'))
 
 
 
