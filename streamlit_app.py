@@ -21,7 +21,7 @@ with st.expander('Data'):
   y
   
 with st.expander('Statistics'):
-  st.write describtion of the data
+  st.write('description of the data')
   df1.describe()
 
 
