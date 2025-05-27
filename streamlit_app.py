@@ -12,7 +12,7 @@ with st.expander('Data'):
   df = pd.read_csv(csv_url)
   df
   
-  features = df1.columns[:-1]
+  features = df.columns[:-1]
   
   X = df[features]
   X
