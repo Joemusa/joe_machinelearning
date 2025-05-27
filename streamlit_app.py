@@ -8,8 +8,9 @@ st.title('🎈 Iris Machine Learning App')
 st.write('This is builds a machine learning model!')
 with st.expander('Data'):
   st.write('**Raw Data**')
-  df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
-  df['target'] = iris_dataset.target
+  df = pd.read_csv('C:/Users/Joseph.Hlongwane/Downloads/iris.csv')
+  #df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
+  #df['target'] = iris_dataset.target
   df
   
 # Extract features (X) and target (y)
@@ -27,16 +28,7 @@ with st.expander('Petal length (cm) vs Petal width (cm)'):
 with st.expander('Sepal length (cm) vs Sepal width (cm)'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)', color = 'target' )
 
-iris = datasets.load_iris()
-X = iris.data
-y = iris.target
 
-clf = RandomForestClassifier()
-clf.fit(X,y)
-prediction = clf.predict(df)
-prediction_proba = clf.predict_proba(df)
-st.subheader('Class labels and their corresponding index number')
-st.write(iris.target_names)
 
 
 
