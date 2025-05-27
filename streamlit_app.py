@@ -27,11 +27,13 @@ with st.expander('Petal length (cm) vs Petal width (cm)'):
 with st.expander('Sepal length (cm) vs Sepal width (cm)'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)', color = 'target' )
 
-with st.sidebar:
-  Sepal_length_cm = st.slider('Sepal length (cm)', 5.1, 7.9, 1.1)
-  Sepal_width_cm = st.slider('Sepal width (cm)', 2.0, 4.4, 1.1)
-  Petal_length_cm = st.slider('Sepal length (cm)', 1.0, 6.9, 1.1)
-  Petal_width_cm = st.slider('Sepal width (cm)', 0.1, 2.4, 0.1)
+st.title("Numeric Input Example")
+
+# Number input
+Sepal_length = st.number_input("Enter sepal length in cm:", min_value=0, max_value=10, value=25)
+
+# Display the input
+st.write("You entered:", Sepal_length)
 
 
                        
