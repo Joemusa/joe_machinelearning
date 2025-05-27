@@ -27,7 +27,7 @@ with st.expander('**Data**'):
   X = df1[features]
   X
   y = df1['Species']
-  y
+  y 
   
 with st.expander('**Statistics**'):
   st.write('**Number of columns and rows**')
