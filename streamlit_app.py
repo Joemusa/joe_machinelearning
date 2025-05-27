@@ -14,7 +14,7 @@ with st.expander('Data'):
   
   features = df.columns[:-1]
   
-  X = df.drop['Id'][features]
+  X = df.drop[columns = 'Id'][features]
   X
   y = df['Species']
   y
