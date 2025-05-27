@@ -42,9 +42,11 @@ with st.expander('**Correlation Matrix**'):
   st.write('Correlation')
   corr = df1.drop(columns = 'Species').corr()
   corr
-  fig, ax = plt.subplots(figsize = (10,4))
-  heatmap = sns.heatmap(corr, annot = True, ax = ax)
-  heatmap
+  fig, ax = plt.subplots(figsize=(10, 4))
+  heatmap = sns.heatmap(corr, annot=True, ax=ax)
+
+  # Display in Streamlit
+  st.pyplot(fig)
 
 
 
