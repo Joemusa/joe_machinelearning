@@ -47,6 +47,9 @@ with st.expander('**Correlation Matrix**'):
   st.write('Heatmap')
   # Display in Streamlit
   st.pyplot(fig)
+  
+  sns.pairplot(df1, vars=df1.columns[:-1], hue=df1.columns[-1])
+  st.pyplot(fig)
 
 
 
