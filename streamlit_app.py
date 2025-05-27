@@ -10,11 +10,11 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
-  df
+  df = df.drop[columns = df['Id'])
   
   features = df.columns[:-1]
   
-  X = df.drop[columns = 'Id'][features]
+  X = df[features]
   X
   y = df['Species']
   y
