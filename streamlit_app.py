@@ -29,11 +29,7 @@ with st.expander('Sepal length (cm) vs Sepal width (cm)'):
 
 st.title("Numeric Input Example")
 
-# Number input
-Sepal_length = st.number_input("Enter sepal length in cm:", min_value=0, max_value=10, value=25)
 
-# Display the input
-st.write("You entered:", Sepal_length)
 
 
                        
