@@ -37,10 +37,11 @@ with st.expander('**Statistics**'):
   st.write('**description of the data**')
   desc = df1.describe()
   desc
-  
-corr = df1.drop(columns = 'Species').corr()
-fig, ax = plt.subplots(figsize = (10,4))
-sns.heatmap(corr, annot = True, ax = ax);
+
+with st.expander('**Correlation Matrix**'):
+  corr = df1.drop(columns = 'Species').corr()
+  fig, ax = plt.subplots(figsize = (10,4))
+  sns.heatmap(corr, annot = True, ax = ax);
 
 
 
