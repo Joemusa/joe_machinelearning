@@ -10,13 +10,13 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
-  df = df.drop(columns = df['Id'])
+  df1 = df.drop(columns = ['Id'])
   
-  features = df.columns[:-1]
+  features = df1.columns[:-1]
   
-  X = df[features]
+  X = df1[features]
   X
-  y = df['Species']
+  y = df1['Species']
   y
   X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.30, random_state = 0)
  
