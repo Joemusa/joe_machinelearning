@@ -27,7 +27,7 @@ with st.expander('Petal length (cm) vs Petal width (cm)'):
 with st.expander('Sepal length (cm) vs Sepal width (cm)'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)', color = 'target' )
 
-iris_dataset = load_iris()
+iris = datasets.load_iris()
 X = iris.data
 y = iris.target
 
