@@ -22,8 +22,8 @@ with st.expander('Data'):
   
 with st.expander('**Statistics**'):
   st.write('Number of columns and rows')
-  show = df1.show
-  show
+  show_d = df1.shape
+  show_d
   st.write('description of the data')
   desc = df1.describe()
   desc
