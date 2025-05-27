@@ -43,7 +43,8 @@ with st.expander('**Correlation Matrix**'):
   corr = df1.drop(columns = 'Species').corr()
   corr
   fig, ax = plt.subplots(figsize = (10,4))
-  sns.heatmap(corr, annot = True, ax = ax);
+  heatmap = sns.heatmap(corr, annot = True, ax = ax)
+  heatmap
 
 
 
