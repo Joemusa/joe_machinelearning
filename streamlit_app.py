@@ -58,7 +58,6 @@ df1['Species'] = le.fit_transform(df1['Species'])
 knn = KNeighborsClassifier()
 knn.fit(X_train, y_train)
 acc_score = round(knn.score(X_test, y_test)*100,1)
-st.write('The model used is KNN
 acc_score
 
 st.subheader("Model Description")
