@@ -11,12 +11,14 @@ with st.expander('Data'):
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
   df
-
-X = df[features]
-X
-y = df['Species']
-y
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.30, random_state = 0)
+  
+  features = df1.columns[:-1]
+  
+  X = df[features]
+  X
+  y = df['Species']
+  y
+  X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.30, random_state = 0)
  
 
 
