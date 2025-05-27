@@ -39,12 +39,12 @@ with st.expander('**Statistics**'):
   desc
 
 with st.expander('**Correlation Matrix**'):
-  st.write('Correlation')
+  st.write('Correlation Table')
   corr = df1.drop(columns = 'Species').corr()
   corr
   fig, ax = plt.subplots(figsize=(10, 4))
   heatmap = sns.heatmap(corr, annot=True, ax=ax)
-
+  st.write('Heatmap')
   # Display in Streamlit
   st.pyplot(fig)
 
