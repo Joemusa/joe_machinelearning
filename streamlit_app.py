@@ -48,8 +48,10 @@ with st.expander('**Correlation Matrix**'):
   # Display in Streamlit
   st.pyplot(fig)
   
-  sns.pairplot(df1, vars=df1.columns[:-1], hue=df1.columns[-1])
-  st.pyplot(fig)
+  pairplot_fig = sns.pairplot(df1, vars=df1.columns[:-1], hue=df1.columns[-1])
+
+  # Show in Streamlit
+  st.pyplot(pairplot_fig.figure)
 
 
 
