@@ -20,7 +20,10 @@ with st.expander('Data'):
   y = df1['Species']
   y
   
-with st.expander('Statistics'):
+with st.expander(**'Statistics'**):
+  st.write('Number of columns and rows')
+  show = df1.show
+  show
   st.write('description of the data')
   desc = df1.describe()
   desc
