@@ -8,10 +8,10 @@ st.title('🎈 Iris Machine Learning App')
 st.write('This is builds a machine learning model!')
 with st.expander('Data'):
   st.write('**Raw Data**')
-  csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
-  df = pd.read_csv(csv_url)
-  #df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
-  #df['target'] = iris_dataset.target
+  #csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
+  #df = pd.read_csv(csv_url)
+  df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
+  df['target'] = iris_dataset.target
   df
   
 # Extract features (X) and target (y)
