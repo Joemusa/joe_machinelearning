@@ -5,7 +5,7 @@ from sklearn.datasets import load_iris
 iris_dataset = load_iris()
 st.title('🎈 Iris Machine Learning App')
 
-st.write('This is app builds a machine learning model!')
+st.write('This is builds a machine learning model!')
 with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
