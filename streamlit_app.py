@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 from sklearn.datasets import load_iris
-iris_dataset = load_iris()
+
 st.title('🎈 Iris Machine Learning App')
 
 st.write('This is builds a machine learning model!')
@@ -27,7 +27,16 @@ with st.expander('Petal length (cm) vs Petal width (cm)'):
 with st.expander('Sepal length (cm) vs Sepal width (cm)'):
   st.scatter_chart(data = df, x = 'sepal length (cm)', y = 'sepal width (cm)', color = 'target' )
 
+iris_dataset = load_iris()
+X = iris.data
+y = iris.target
 
+clf = RandomForestClassifier()
+clf.fit(X,y)
+prediction = clf.predict(df)
+prediction_proba = clf.predict_proba(df)
+st.subheader('Class labels and their corresponding index number')
+st.write(iris.target_names)
 
 
 
