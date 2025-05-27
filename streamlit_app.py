@@ -39,7 +39,9 @@ with st.expander('**Statistics**'):
   desc
 
 with st.expander('**Correlation Matrix**'):
+  st.write('Correlation')
   corr = df1.drop(columns = 'Species').corr()
+  corr
   fig, ax = plt.subplots(figsize = (10,4))
   sns.heatmap(corr, annot = True, ax = ax);
 
