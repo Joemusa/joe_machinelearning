@@ -13,10 +13,10 @@ with st.expander('Data'):
   df
   
 # Extract features (X) and target (y)
-  st.write('Features')
+  st.write('**Features**')
   X = df.drop(columns='target')  # Features (all columns except 'target')
   X
-  st.write('Target')
+  st.write('**Target**')
   y = df['target']               # Target (labels)
   y
 
