@@ -53,7 +53,11 @@ with st.expander('**Correlation Matrix**'):
   # Show in Streamlit
   st.pyplot(pairplot_fig.figure)
 
-
+df1['Species'] = le.fit_transform(df1['Species'])
+knn = KNeighborsClassifier()
+knn.fit(X_train, y_train)
+acc_score = round(knn.score(X_test, y_test)*100,1)
+acc_score
 
 
 
