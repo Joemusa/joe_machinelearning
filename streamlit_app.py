@@ -49,7 +49,7 @@ with st.expander('**Correlation Matrix**'):
   st.pyplot(fig)
   
   pairplot_fig = sns.pairplot(df1, vars=df1.columns[:-1], hue=df1.columns[-1])
-
+  st.write('Feature Relationship By Species')
   # Show in Streamlit
   st.pyplot(pairplot_fig.figure)
 
