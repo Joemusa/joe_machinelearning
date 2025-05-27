@@ -13,9 +13,9 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
 
-st.title('🎈 Iris Machine Learning App')
+st.title('Iris Species Clacifier Machine Learning App')
 
-st.write('This is builds a machine learning model!')
+st.subheader('**Data Analysis**')
 with st.expander('**Data**'):
   st.write('**Raw Data**')
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
@@ -58,7 +58,6 @@ df1['Species'] = le.fit_transform(df1['Species'])
 knn = KNeighborsClassifier()
 knn.fit(X_train, y_train)
 acc_score = round(knn.score(X_test, y_test)*100,1)
-acc_score
 
 st.subheader("Model Description")
 st.markdown(f"""
@@ -66,7 +65,7 @@ We have used the **K-Nearest Neighbors (KNN)** algorithm to build a predictive m
 This model classifies iris flowers into one of three species by comparing the input flower's measurements to those in the training data.
 
 The KNN model works by finding the 'k' closest data points to a new input and making predictions based on the majority class among those neighbors.
-For this app, we selected **k = 3** as it offers a good balance between simplicity and performance.
+For this app, we selected **k = 1** as it offers a good balance between simplicity and performance.
 
 After training the model and testing it on unseen data, we achieved an accuracy of approximately **{acc_score}%**.
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
