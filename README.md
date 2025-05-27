@@ -1,6 +1,6 @@
 # 📦 Machine Learning App
 ```
-This is a machine learning appDescription of the app ...
+This is a machine learning appDescription of the app. ...
 
 ## Demo App
 
