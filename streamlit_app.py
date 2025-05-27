@@ -22,7 +22,9 @@ with st.expander('Data'):
   
 with st.expander('Statistics'):
   st.write('description of the data')
-  df1.describe()
+  desc = df1.describe()
+  desc
+  
 
 
 
