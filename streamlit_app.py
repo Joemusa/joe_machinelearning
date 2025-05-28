@@ -54,10 +54,10 @@ with st.expander('**Correlation Matrix**'):
   st.pyplot(pairplot_fig.figure)
   
 features = df1.columns[:-1]
-  X = df1[features]
-  X
-  y = df1['Species']
-  y 
+X = df1[features]
+X
+y = df1['Species']
+y 
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.30, random_state = 0)
 df1['Species'] = le.fit_transform(df1['Species'])
 knn = KNeighborsClassifier()
