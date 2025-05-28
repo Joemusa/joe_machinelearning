@@ -42,8 +42,7 @@ with st.expander('**Statistics**'):
 with st.expander('**Correlation Matrix**'):
   st.markdown(f"""
     
-    1. Petal Length & Petal Width (0.96)
-    Very strong positive correlation.
+    1. Petal Length & Petal Width (0.96). Very strong positive correlation.
     This means when Petal Length increases, Petal Width also increases.
     These two features are very similar and almost move together.
     
@@ -56,23 +55,11 @@ with st.expander('**Correlation Matrix**'):
     
     4. Sepal Width & Other Features
     Weak or negative correlations:
-    epal Width vs. Sepal Length = -0.11 (very weak)
+    Sepal Width vs. Sepal Length = -0.11 (very weak)
     Sepal Width vs. Petal Length = -0.42
     Sepal Width vs. Petal Width = -0.36
     This suggests that wider sepals are not necessarily associated with longer or wider petals.""")
-
-
-
-
-
-
-
-
-
-
-
-
-           
+         
   corr = df1.drop(columns = 'Species').corr()
   corr
   fig, ax = plt.subplots(figsize=(10, 4))
