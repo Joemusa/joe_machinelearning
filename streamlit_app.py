@@ -99,6 +99,7 @@ petal_width = st.sidebar.number_input("Petal width (cm)", min_value=0.0, max_val
 
 # Main page info
 st.title("Iris Flower Prediction")
+st.markdown("""
 To get started:
 - Open the **sidebar** by clicking the arrow at the top left of the screen.
 - Enter the flower's measurements: **Sepal Length**, **Sepal Width**, **Petal Length**, and **Petal Width**.
