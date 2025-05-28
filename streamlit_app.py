@@ -17,7 +17,7 @@ st.title('Iris Species Clacifier ML App')
 st.markdown("""
 🌸 **About This App**  
 This app uses a machine learning model called **K-Nearest Neighbors (KNN)** to help identify the species of an iris flower.  
-By entering the flower’s **sepal** and **petal** measurements, the app will predict what type of iris it is — for example, *Setosa*, *Versicolor*, or *Virginica*.
+By entering the flower **sepal** and **petal** measurements, the app will predict what type of iris it is — for example, *Setosa*, *Versicolor*, or *Virginica*.
 
 In simple terms:  
 **You provide the flower measurements, and the app tells you which species it most likely belongs to.**
