@@ -76,8 +76,10 @@ After training the model and testing it on unseen data, we achieved an accuracy 
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
 
-
-
+sepal_length = st.number_input("Sepal length (cm)", min_value=0.0, max_value=10.0, value=5.1)
+sepal_width = st.number_input("Sepal width (cm)", min_value=0.0, max_value=10.0, value=3.5)
+petal_length = st.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
+petal_width = st.number_input("Petal width (cm)", min_value=0.0, max_value=10.0, value=0.2)
 
                        
 
