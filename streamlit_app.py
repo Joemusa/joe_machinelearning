@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib 
 
 
-st.title('Iris Species Clacifier ML App')
+st.title('Iris Species Classifier ML App')
 st.markdown("""
 🌸 **About This App**  
 This app uses a machine learning model called **K-Nearest Neighbors (KNN)** to help identify the species of an iris flower.  
