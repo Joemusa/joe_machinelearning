@@ -20,7 +20,7 @@ This app uses a machine learning model called **K-Nearest Neighbors (KNN)** to h
 By entering the flower’s **sepal** and **petal** measurements, the app will predict what type of iris it is — for example, *Setosa*, *Versicolor*, or *Virginica*.
 
 In simple terms:  
-**You provide the flower’s measurements, and the app tells you which species it most likely belongs to.**
+**You provide the flower measurements, and the app tells you which species it most likely belongs to.**
 """)
 
 st.subheader('**Data Analysis**')
