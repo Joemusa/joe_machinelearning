@@ -75,7 +75,8 @@ For this app, we selected **k = 1** as it offers a good balance between simplici
 After training the model and testing it on unseen data, we achieved an accuracy of approximately **{acc_score}%**.
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
-
+st.title("🌸 Iris Flower Species Predictor")
+st.write("Enter flower measurements below:")
 sepal_length = st.number_input("Sepal length (cm)", min_value=0.0, max_value=10.0, value=5.1)
 sepal_width = st.number_input("Sepal width (cm)", min_value=0.0, max_value=10.0, value=3.5)
 petal_length = st.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
