@@ -91,11 +91,15 @@ petal_width = st.sidebar.number_input("Petal width (cm)", min_value=0.0, max_val
 
 # Main page info
 st.title("Iris Flower Classifier")
-st.write("This app uses a machine learning model called K-Nearest Neighbors (KNN) to help identify the species of an iris flower.
-By entering the flower’s sepal and petal measurements, the app will predict what type of iris it is — for example, Setosa, Versicolor, or Virginica.
+st.markdown("""
+🌸 **About This App**  
+This app uses a machine learning model called **K-Nearest Neighbors (KNN)** to help identify the species of an iris flower.  
+By entering the flower’s **sepal** and **petal** measurements, the app will predict what type of iris it is — for example, *Setosa*, *Versicolor*, or *Virginica*.
 
-In simple terms:
-You provide the flower’s measurements, and the app tells you which species it most likely belongs to.")
+In simple terms:  
+**You provide the flower’s measurements, and the app tells you which species it most likely belongs to.**
+""")
+
 st.write(f"Model Accuracy: **{acc_score}%**")
 
 if st.sidebar.button("Predict Species"):
