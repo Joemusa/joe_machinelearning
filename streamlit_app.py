@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib 
 
 
-st.title('Iris Species Clacifier ML App')
+st.title('Iris Species Clacifier ML AppS')
 
 st.subheader('**Data Analysis**')
 with st.expander('**Data**'):
