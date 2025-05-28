@@ -1,4 +1,4 @@
-# import plotly.express as px
+bar# import plotly.express as px
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -83,12 +83,12 @@ st.sidebar.markdown(f"""
   st.write("Enter flower measurements below:")
   st.title("🌸 Iris Flower Species Predictor")
   st.write("Enter flower measurements below:")
-  sepal_length = st.number_input("Sepal length (cm)", min_value=0.0, max_value=10.0, value=5.1)
-  sepal_width = st.number_input("Sepal width (cm)", min_value=0.0, max_value=10.0, value=3.5)
-  petal_length = st.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
-  petal_width = st.number_input("Petal width (cm)", min_value=0.0, max_value=10.0, value=0.2)
+  sepal_length = st.sidebar.number_input("Sepal length (cm)", min_value=0.0, max_value=10.0, value=5.1)
+  sepal_width = st.sidebar.number_input("Sepal width (cm)", min_value=0.0, max_value=10.0, value=3.5)
+  petal_length = st.sidebar.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
+  petal_width = st.sidebar.number_input("Petal width (cm)", min_value=0.0, max_value=10.0, value=0.2)
 
-  if st.button("Predict Species"):
+  if st.sidebar.button("Predict Species"):
     input_data = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]], columns=features)
     prediction = knn.predict(input_data)
     st.success(f"🌼 Predicted Species: **{prediction[0]}**")
