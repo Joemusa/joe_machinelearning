@@ -21,11 +21,12 @@ with st.expander('**Data**'):
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
   df
-  
+  st.write('**Features**')
   df1 = df.drop(columns = ['Id'])
   features = df1.columns[:-1]
   X = df1[features]
   X
+  st.write('**Target**')
   y = df1['Species']
   y 
   
@@ -40,6 +41,38 @@ with st.expander('**Statistics**'):
  
 with st.expander('**Correlation Matrix**'):
   st.write('Correlation Table')
+  st.write(
+    '1. Petal Length & Petal Width (0.96)
+    Very strong positive correlation.
+    This means when Petal Length increases, Petal Width also increases.
+    These two features are very similar and almost move together.
+    
+    2. Sepal Length & Petal Length (0.87)
+    Strong positive correlation.
+    If a flower has a long sepal, it’s likely to also have a long petal.
+    3. Sepal Length & Petal Width (0.82)
+    Also a strong positive correlation.
+    Longer sepals are linked to wider petals.
+    
+    4. Sepal Width & Other Features
+    Weak or negative correlations:
+    epal Width vs. Sepal Length = -0.11 (very weak)
+    Sepal Width vs. Petal Length = -0.42
+    Sepal Width vs. Petal Width = -0.36
+    This suggests that wider sepals are not necessarily associated with longer or wider petals.')
+
+
+
+
+
+
+
+
+
+
+
+
+           
   corr = df1.drop(columns = 'Species').corr()
   corr
   fig, ax = plt.subplots(figsize=(10, 4))
