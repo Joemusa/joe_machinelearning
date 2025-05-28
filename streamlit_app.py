@@ -20,6 +20,7 @@ with st.expander('**Data**'):
   st.write('**Raw Data**')
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
+  features = df1.columns[:-1]
   df1 = df.drop(columns = ['Id'])
   X = df1[features]
   X
@@ -34,14 +35,7 @@ with st.expander('**Statistics**'):
   desc = df1.describe()
   desc
 
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
-
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
-  
+ 
 with st.expander('**Correlation Matrix**'):
   st.write('Correlation Table')
   corr = df1.drop(columns = 'Species').corr()
