@@ -72,29 +72,7 @@ After training the model and testing it on unseen data, we achieved an accuracy 
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
 
-st.sidebar.title("🔍 Input Flower Measurements")
 
-sepal_length = st.sidebar.number_input("Sepal length (cm)", min_value=0.0, max_value=10.0, value=5.1)
-sepal_width = st.sidebar.number_input("Sepal width (cm)", min_value=0.0, max_value=10.0, value=3.5)
-petal_length = st.sidebar.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
-petal_width = st.sidebar.number_input("Petal width (cm)", min_value=0.0, max_value=10.0, value=0.2)
-
-if st.sidebar.button("🔮 Predict Species"):
-    input_data = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]], columns=features)
-    prediction = knn.predict(input_data)
-    st.success(f"🌼 Predicted Species: **{prediction[0]}**")
-
-# Main page info
-    st.title("🌸 Iris Flower Classifier")
-    st.write("This app uses a K-Nearest Neighbors (KNN) model to classify iris flower species based on measurements.")
-    st.write(f"Model Accuracy: **{acc_score}%**")
-                       
-
-  with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
 
 
 
