@@ -79,14 +79,15 @@ sepal_width = st.sidebar.number_input("Sepal width (cm)", min_value=0.0, max_val
 petal_length = st.sidebar.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
 petal_width = st.sidebar.number_input("Petal width (cm)", min_value=0.0, max_value=10.0, value=0.2)
 
+# Main page info
+st.title("Iris Flower Classifier")
+st.write("This app uses a K-Nearest Neighbors (KNN) model to classify iris flower species based on measurements.")
+st.write(f"Model Accuracy: **{acc_score}%**")
 
 if st.sidebar.button("Predict Species"):
     input_data = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]], columns=features)
     prediction = knn.predict(input_data)
     st.success(f"Predicted Species: **{prediction[0]}**")
 
-# Main page info
-st.title("Iris Flower Classifier")
-st.write("This app uses a K-Nearest Neighbors (KNN) model to classify iris flower species based on measurements.")
-st.write(f"Model Accuracy: **{acc_score}%**")
+
 
