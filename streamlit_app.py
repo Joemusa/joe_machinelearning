@@ -13,13 +13,14 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib 
 
 
-st.title('Iris Species Clacifier ML AppS')
+st.title('Iris Species Clacifier ML App')
 
 st.subheader('**Data Analysis**')
 with st.expander('**Data**'):
   st.write('**Raw Data**')
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
+  df
   
   df1 = df.drop(columns = ['Id'])
   features = df1.columns[:-1]
