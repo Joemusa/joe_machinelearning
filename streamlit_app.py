@@ -85,12 +85,12 @@ if st.sidebar.button("🔮 Predict Species"):
     st.success(f"🌼 Predicted Species: **{prediction[0]}**")
 
 # Main page info
-st.title("🌸 Iris Flower Classifier")
-st.write("This app uses a K-Nearest Neighbors (KNN) model to classify iris flower species based on measurements.")
-st.write(f"Model Accuracy: **{acc_score}%**")
+    st.title("🌸 Iris Flower Classifier")
+    st.write("This app uses a K-Nearest Neighbors (KNN) model to classify iris flower species based on measurements.")
+    st.write(f"Model Accuracy: **{acc_score}%**")
                        
 
-
+  
 
 
 
