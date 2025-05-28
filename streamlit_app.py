@@ -72,6 +72,7 @@ After training the model and testing it on unseen data, we achieved an accuracy 
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
 
+st.sidebar.title("🔍 Input Flower Measurements")
 
 
 
