@@ -78,6 +78,9 @@ The model compares a new flower's measurements to those in the training set and 
 **Model Accuracy:**  
 Approximately **{accuracy * 100:.2f}%**
 """)
+# Main app content
+st.title("Iris Flower Classifier")
+st.write("Use the inputs below to classify a new iris flower using the KNN model.")
 
 
                        
