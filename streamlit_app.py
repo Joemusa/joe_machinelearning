@@ -74,6 +74,10 @@ This means the model correctly classifies new samples most of the time, giving u
 
 st.sidebar.title("🔍 Input Flower Measurements")
 
+sepal_length = st.sidebar.number_input("Sepal length (cm)", min_value=0.0, max_value=10.0, value=5.1)
+sepal_width = st.sidebar.number_input("Sepal width (cm)", min_value=0.0, max_value=10.0, value=3.5)
+petal_length = st.sidebar.number_input("Petal length (cm)", min_value=0.0, max_value=10.0, value=1.4)
+petal_width = st.sidebar.number_input("Petal width (cm)", min_value=0.0, max_value=10.0, value=0.2)
 
 
 
