@@ -41,7 +41,7 @@ with st.expander('**Statistics**'):
  
 with st.expander('**Correlation Matrix**'):
   st.write('Correlation Table')
-  st.write('1. Petal Length & Petal Width (0.96)
+  st.write('1 Petal Length & Petal Width (0.96)
     Very strong positive correlation.
     This means when Petal Length increases, Petal Width also increases.
     These two features are very similar and almost move together.
