@@ -60,17 +60,6 @@ knn = KNeighborsClassifier()
 knn.fit(X_train, y_train)
 acc_score = round(knn.score(X_test, y_test)*100,1)
 
-st.subheader("Model Description")
-st.markdown(f"""
-We have used the **K-Nearest Neighbors (KNN)** algorithm to build a predictive model based on the Iris dataset.
-This model classifies iris flowers into one of three species by comparing the input flower's measurements to those in the training data.
-
-The KNN model works by finding the 'k' closest data points to a new input and making predictions based on the majority class among those neighbors.
-For this app, we selected **k = 1** as it offers a good balance between simplicity and performance.
-
-After training the model and testing it on unseen data, we achieved an accuracy of approximately **{acc_score}%**.
-This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
-""")
 
 st.sidebar.title("Input Flower Measurements")
 
