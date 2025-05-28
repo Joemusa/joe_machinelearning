@@ -67,11 +67,14 @@ For this app, we selected **k = 1** as it offers a good balance between simplici
 After training the model and testing it on unseen data, we achieved an accuracy of approximately **{acc_score}%**.
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
+
 with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
 
 
                        
