@@ -21,14 +21,6 @@ with st.expander('**Data**'):
   csv_url = ('https://raw.githubusercontent.com/Joemusa/joe_machinelearning/refs/heads/master/Iris.csv')
   df = pd.read_csv(csv_url)
   df1 = df.drop(columns = ['Id'])
- 
-  
-  features = df1.columns[:-1]
-  
-  X = df1[features]
-  X
-  y = df1['Species']
-  y 
   
 with st.expander('**Statistics**'):
   st.write('**Number of columns and rows**')
@@ -52,7 +44,12 @@ with st.expander('**Correlation Matrix**'):
   st.write('Feature Relationship By Species')
   # Show in Streamlit
   st.pyplot(pairplot_fig.figure)
-
+  
+features = df1.columns[:-1]
+  X = df1[features]
+  X
+  y = df1['Species']
+  y 
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.30, random_state = 0)
 df1['Species'] = le.fit_transform(df1['Species'])
 knn = KNeighborsClassifier()
@@ -70,7 +67,7 @@ For this app, we selected **k = 1** as it offers a good balance between simplici
 After training the model and testing it on unseen data, we achieved an accuracy of approximately **{acc_score}%**.
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
-
+st.sidebar('**Enter your measurements in cm**')
 
 
                        
