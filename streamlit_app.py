@@ -75,7 +75,7 @@ This means the model correctly classifies new samples most of the time, giving u
 st.sidebar.header("Model Info")
 st.sidebar.markdown(f"""
 **Model:** KNN (k = 3)  
-**Accuracy:** {accuracy * 100:.2f}%
+**Accuracy:** {acc_score}%
 """)
 
 # Main app
