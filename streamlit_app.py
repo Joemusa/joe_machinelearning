@@ -30,6 +30,14 @@ with st.expander('**Statistics**'):
   desc = df1.describe()
   desc
 
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
+  
 with st.expander('**Correlation Matrix**'):
   st.write('Correlation Table')
   corr = df1.drop(columns = 'Species').corr()
@@ -68,13 +76,7 @@ After training the model and testing it on unseen data, we achieved an accuracy 
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
 
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
 
 
                        
