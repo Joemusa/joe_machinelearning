@@ -40,7 +40,7 @@ with st.expander('**Statistics**'):
 
  
 with st.expander('**Correlation Matrix**'):
-  st.write('Correlation Table')
+  st.markdown(f"""Correlation Table')
   st.write('1 Petal Length & Petal Width (0.96)
     Very strong positive correlation.
     This means when Petal Length increases, Petal Width also increases.
@@ -58,7 +58,7 @@ with st.expander('**Correlation Matrix**'):
     epal Width vs. Sepal Length = -0.11 (very weak)
     Sepal Width vs. Petal Length = -0.42
     Sepal Width vs. Petal Width = -0.36
-    This suggests that wider sepals are not necessarily associated with longer or wider petals.')
+    This suggests that wider sepals are not necessarily associated with longer or wider petals.""")
 
 
 
