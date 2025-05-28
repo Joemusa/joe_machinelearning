@@ -67,20 +67,11 @@ For this app, we selected **k = 1** as it offers a good balance between simplici
 After training the model and testing it on unseen data, we achieved an accuracy of approximately **{acc_score}%**.
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
-st.sidebar.header('**Enter your measurements in cm**')
-st.sidebar.markdown(f"""
-**Model used:**  
-K-Nearest Neighbors (KNN)
-
-**How it works:**  
-The model compares a new flower's measurements to those in the training set and predicts the species based on the majority of the closest neighbors (k = 3).
-
-**Model Accuracy:**  
-Approximately **{accuracy * 100:.2f}%**
-""")
-# Main app content
-st.title("Iris Flower Classifier")
-st.write("Use the inputs below to classify a new iris flower using the KNN model.")
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
 
 
                        
