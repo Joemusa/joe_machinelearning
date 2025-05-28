@@ -68,6 +68,16 @@ After training the model and testing it on unseen data, we achieved an accuracy 
 This means the model correctly classifies new samples most of the time, giving us confidence in its predictions.
 """)
 st.sidebar.header('**Enter your measurements in cm**')
+st.sidebar.markdown(f"""
+**Model used:**  
+K-Nearest Neighbors (KNN)
+
+**How it works:**  
+The model compares a new flower's measurements to those in the training set and predicts the species based on the majority of the closest neighbors (k = 3).
+
+**Model Accuracy:**  
+Approximately **{accuracy * 100:.2f}%**
+""")
 
 
                        
